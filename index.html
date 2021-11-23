@@ -6,87 +6,104 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anton Nesterenko CV</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="avatar.jpg" width="200" alt="My foto">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="My foto" class="avatar">
+
+            <div class="info-text">
                 <h1>Антон Нестеренко</h1>
-                <p><em>Я начинающий <strong>разработчик</strong></em></p>
+                <p>Я начинающий <strong>разработчик</strong></p>
                 <p>Я люблю путишествовать, учится новому и искать новые решения</p>
-            </td>
-        </tr>
-    </table>
 
-    <hr>
+                <h4>Мои социальные сети</h4>
+                    <a target="_blank" href="https://www.instagram.com/antoni_a_ko">Instagram</a>
+                   |
+                    <a target="_blank" href="https://t.me/MonoLogTone">Telegram</a>
+            </div>
+        </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a target="_blank" href="https://www.instagram.com/antoni_a_ko">Instagram</a></li>
-        <li><a target="_blank" href="https://t.me/MonoLogTone">Telegram</a></li>
-    </ul>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Web-програмирование</li>
+                <li>Путешествия</li>
+                <li>Кулинария</li>
+                <li>3D printing</li>
+            </ol>
+        </div>
 
-    <hr>
+        <div class="card bg-green">
+            <h2>Опит работы</h2>
+            <table class="table">
+                <tr>
+                    <td>KK Wind Solutions </td>
+                    <td>Continuous Improvement Engineer</td>
+                    <td>2017-2018</td>
+                </tr>
+                <tr>
+                    <td>Tweetop</td>
+                    <td>Инженер-конструктор 3D SolidWorks/Fusion 360/3D Printing</td>
+                    <td>2018-2019</td>
+                </tr>
+                <tr>
+                    <td>Infotech</td>
+                    <td>Technical writer</td>
+                    <td>2020-now</td>
+                </tr>
+                <tr>
+                    <td>Infotech</td>
+                    <td>Softwer Engineer</td>
+                    <td>2022-now</td>
+                </tr>
+            </table>
+        </div>
 
-    <h2>Мои хобби</h2>
-    <ol type="1">
-        <li>Web-програмирование</li>
-        <li>Путешествия</li>
-        <li>Кулинария</li>
-        <li>3D printing</li>
-    </ol>
+        <div class="card bg-red">
+            <h2>Проекты</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="...">Панель индикаторов эффективности производства электроэнергии ветрогенераторов и солнечных установок (в разработке)</a>
+                </li>
+            </ul>
+        </div>
 
-    <hr>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
 
-    <h2>Опит работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>Infotech</td>
-            <td>Technical writer</td>
-            <td>2020-today</td>
-        </tr>
-        <tr>
-            <td>Infotech</td>
-            <td>Softwer Engineer</td>
-            <td>2022-today</td>
-        </tr>
-    </table>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="username">Ваше имя:</label>
+                        <input type="text" id="username" placeholder="Введите ваше имя">
+                    </div>
 
-    <hr>
+                    <div class="form-group">
+                        <label for="email">Ваше email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                 </div>
 
-    <h2>Проекты</h2>
-    <a target="_blank" href="projects.html">Посмотреть список</a>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" rows="2" cols="20"></textarea>
+                </div>
 
-    <hr>
+                <input class="btn" type="submit" value="Отправить">
+            </form>
+        </div>
+        <div class="position">
+            <div class="box"></div>
+        </div>
+    </div>
 
-    <h2>Связаться со мной</h2>
 
-    <form action="/">
-        <label for="username">Ваше имя:</label>
-        <input type="text" id="username" placeholder="Введите ваше имя">
 
-        <br>
-
-        <label for="email">Ваше email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <textarea id="text" rows="2" cols="20"></textarea>
-
-        <br>
-
-        <input type="submit">
-    </form>
-
+    <div style="margin-bottom: 500px;;"></div>
 </body>
 </html>
