@@ -1,3 +1,3 @@
-# cv
+# CV
 
 https://antonynest.github.io/cv/
